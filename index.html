@@ -5,15 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wistia Newsletter</title>
+
+    <!--Media Queries-->
+    <style>
+      /*Tablet*/
+      @media only screen and (max-width: 960px) {
+        .email-container {
+          width: 600 !important;
+          padding: 0px 15px;
+        }
+
+        .content-container-bottom {
+          margin-top: 8px !important;
+          margin: 8px 0 0 0 !important;
+        }
+
+        .content {
+        }
+
+        .blue-head-text {
+          font-size: 18px !important;
+        }
+
+        .blk-head-text {
+          font-size: 22px !important;
+        }
+
+        .article-image {
+          width: 100%;
+        }
+
+        .article-text {
+          font-size: 18px !important;
+        }
+
+        .social-media {
+          margin-bottom: 8px !important;
+        }
+      }
+
+      /*Mobile*/
+      @media only screen and (max-width: 600px) {
+        .email-container {
+          width: 100% !important;
+        }
+
+        .content-container-bottom {
+          margin-top: 10px !important;
+          margin: 10px 0 0 0 !important;
+        }
+
+        .content {
+          margin-bottom: 10px !important;
+        }
+
+        .blue-head-text {
+          font-size: 20px !important;
+        }
+
+        .blk-head-text {
+          font-size: 24px !important;
+        }
+
+        .article-image {
+        }
+
+        .article-text {
+          font-size: 20px !important;
+        }
+
+        .social-media {
+          margin-bottom: 8px !important;
+        }
+
+        .sm-icon {
+          width: 32px !important;
+        }
+      }
+    </style>
   </head>
-  <body>
+
+  <body style="margin-left: 0px; margin-right: 0px">
     <!--Email Container-->
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <table
+      class="page"
+      width="100%"
+      border="0"
+      align="center"
+      cellspacing="0"
+      cellpadding="0"
+    >
       <tr>
         <td>
           <!--Email Content Container-->
           <table
-            class="container"
+            class="email-container"
             width="600"
             align="center"
             cellspacing="0"
@@ -24,6 +110,7 @@
               <td>
                 <!--Bordered Content 1-->
                 <table
+                  class="content-container-top"
                   cellspacing="0"
                   cellpadding="0"
                   align="center"
@@ -39,61 +126,79 @@
                   <!--Together Article-->
                   <tr>
                     <td>
-                      <table cellspacing="0" cellpadding="0" align="center">
+                      <table
+                        class="content"
+                        cellspacing="0"
+                        cellpadding="0"
+                        align="center"
+                      >
                         <tr>
                           <td>
-                            <h1
+                            <h2
+                              class="blue-head-text"
                               style="
                                 color: #2682ef;
                                 font-size: 16px;
                                 font-weight: 800;
+                                font-family: Arial, Helvetica, sans-serif;
                                 padding: 0px 15px;
+                                margin-bottom: 0px;
                               "
                             >
                               TOGETHER WITH WISTIA
-                            </h1>
-                            <h2
+                            </h2>
+                            <h3
+                              class="blk-head-text"
                               style="
-                                color: #000000;
+                                color: #333333;
                                 font-size: 20px;
                                 font-weight: 800;
                                 padding-top: 0px;
                                 padding-left: 15px;
-                                margin-top: -10px;
+                                margin-top: 0px;
+                                margin-bottom: 15px;
+                                font-family: Arial, Helvetica, sans-serif;
                               "
                             >
                               Start marketing smarter, not harder
-                            </h2>
+                            </h3>
                             <img
+                              class="article-image"
                               width="600"
                               src="https://i.ibb.co/V3QJRzq/asset2.png"
-                              alt="curb your enthusiasm"
+                              alt="wistia"
                             />
                             <p
+                              class="article-text"
                               style="
                                 font-size: 16px;
                                 text-align: start;
                                 padding: 0px 15px;
+                                font-family: Arial, Helvetica, sans-serif;
                               "
                             >
                               When industry experts put their noggins together
                               to develop the ultimate resource for marketers,
-                              magic happens. Magin in the form of
+                              magic happens. Magic in the form of
                               <a
+                                class="text-link"
                                 style="
                                   color: #333333;
                                   text-decoration: none;
                                   border-bottom: 2px solid #2682ef;
+                                  font-family: Arial, Helvetica, sans-serif;
                                 "
                                 href="#"
                                 >this handy, wildly practical report</a
                               >, that is.
                             </p>
                             <p
+                              class="article-text"
                               style="
                                 padding: 0px 15px;
                                 font-size: 16px;
                                 text-align: start;
+                                font-family: Arial, Helvetica, sans-serif;
                               "
                             >
                               Trusted brands like HubSpot, Wistia, and Litmus
@@ -104,10 +209,12 @@
                               strategies and outperform their goals.
                             </p>
                             <p
+                              class="article-text"
                               style="
                                 padding: 0px 15px;
                                 font-size: 16px;
                                 text-align: start;
+                                font-family: Arial, Helvetica, sans-serif;
                               "
                             >
                               You'll find the latest data, trends, and expert
@@ -120,19 +227,23 @@
                             </p>
 
                             <p
+                              class="article-text"
                               style="
                                 padding: 0px 15px;
                                 font-size: 16px;
                                 text-align: start;
+                                font-family: Arial, Helvetica, sans-serif;
                               "
                             >
                               Ready to see sparks fly?
                               <a
+                                class="text-link"
                                 style="
                                   font-style: normal;
                                   text-decoration: none;
                                   border-bottom: 2px solid #2682ef;
-                                  color: #000000;
+                                  color: #333333;
+                                  font-family: Arial, Helvetica, sans-serif;
                                 "
                                 href="#"
                               >
@@ -150,6 +261,7 @@
 
                 <!--Bordered Content 2-->
                 <table
+                  class="content-container-bottom"
                   cellspacing="0"
                   cellpadding="0"
                   align="center"
@@ -169,37 +281,50 @@
                   <!--Growth Article-->
                   <tr>
                     <td>
-                      <table cellspacing="0" cellpadding="0" align="center">
+                      <table
+                        class="content"
+                        cellspacing="0"
+                        cellpadding="0"
+                        align="center"
+                      >
                         <tr>
                           <td>
-                            <h1
+                            <h2
+                              class="blue-head-text"
                               style="
                                 color: #2682ef;
                                 font-size: 16px;
                                 font-weight: 800;
                                 padding: 0px 15px;
+                                margin-bottom: 0px;
+                                font-family: Arial, Helvetica, sans-serif;
                               "
                             >
                               GROWTH
-                            </h1>
-                            <h2
+                            </h2>
+                            <h3
+                              class="blk-head-text"
                               style="
-                                color: #000000;
+                                color: #333333;
                                 font-size: 20px;
                                 font-weight: 800;
                                 padding-top: 0px;
                                 padding-left: 15px;
-                                margin-top: -10px;
+                                margin-top: 0px;
+                                margin-bottom: 15px;
+                                font-family: Arial, Helvetica, sans-serif;
                               "
                             >
                               Follow me and everything is alright
-                            </h2>
+                            </h3>
                             <img
+                              class="article-image"
                               width="600"
                               src="https://i.ibb.co/Prz7S2k/asset1.png"
                               alt="curb your enthusiasm"
                             />
                             <p
+                              class="article-text"
                               style="
                                 padding-left: 8px;
                                 padding-top: 0px;
@@ -207,15 +332,18 @@
                                 font-size: 10px;
                                 font-style: italic;
                                 font-weight: 500;
+                                font-family: Arial, Helvetica, sans-serif;
                               "
                             >
                               Curb Your Enthusiasm/HBO via Giphy
                             </p>
                             <p
+                              class="article-text"
                               style="
                                 font-size: 14px;
                                 font-style: italic;
                                 padding: 0px 15px;
+                                font-family: Arial, Helvetica, sans-serif;
                               "
                             >
                               Future Social is a weekly newsletter on social
@@ -227,10 +355,12 @@
                                 >Check out and excerpt from one of his pieces
                                 below, and sign up for Future social
                                 <a
+                                  class="text-link"
                                   style="
                                     color: #333333;
                                     text-decoration: none;
                                     border-bottom: 2px solid #2682ef;
+                                    font-family: Arial, Helvetica, sans-serif;
                                   "
                                   href="#"
                                   >here</a
@@ -240,10 +370,12 @@
                             </p>
 
                             <p
+                              class="article-text"
                               style="
                                 padding: 0px 15px;
                                 font-size: 16px;
                                 text-align: start;
+                                font-family: Arial, Helvetica, sans-serif;
                               "
                             >
                               Half the battle working social media jobs is
@@ -254,10 +386,12 @@
                               to analyze from a few different angles.
                             </p>
                             <p
+                              class="article-text"
                               style="
                                 padding: 0px 15px;
                                 font-size: 16px;
                                 text-align: start;
+                                font-family: Arial, Helvetica, sans-serif;
                               "
                             >
                               That said, the ol' "follower count is a vanity
@@ -267,10 +401,12 @@
                             </p>
 
                             <p
+                              class="article-text"
                               style="
                                 padding: 0px 15px;
                                 font-size: 16px;
                                 text-align: start;
+                                font-family: Arial, Helvetica, sans-serif;
                               "
                             >
                               <b>You want more followers:</b> This is the
@@ -287,20 +423,24 @@
                             </p>
 
                             <p
+                              class="article-text"
                               style="
                                 font-style: italic;
                                 padding: 0px 15px;
                                 font-size: 16px;
                                 text-align: start;
+                                font-family: Arial, Helvetica, sans-serif;
                               "
                             >
                               <b>
                                 <a
+                                  class="text-link"
                                   style="
                                     font-style: normal;
                                     text-decoration: none;
                                     border-bottom: 2px solid #2682ef;
-                                    color: #000000;
+                                    color: #333333;
+                                    font-family: Arial, Helvetica, sans-serif;
                                   "
                                   href="#"
                                   >Read why and how you can take a
@@ -315,6 +455,7 @@
                       </table>
                       <!--Socials-->
                       <table
+                        class="social-media"
                         cellspacing="0"
                         cellpadding="0"
                         align="left"
@@ -322,26 +463,42 @@
                       >
                         <tr>
                           <td>
-                            <a href="#" style="padding-right: 12px"
+                            <a
+                              class="sm-link"
+                              href="#"
+                              style="padding-right: 12px"
                               ><img
+                                class="sm-icon"
                                 width="24"
                                 src="https://i.ibb.co/kgcLCvY/fb-logo.png"
                                 alt="facebook"
                             /></a>
-                            <a href="#" style="padding-right: 12px"
+                            <a
+                              class="sm-link"
+                              href="#"
+                              style="padding-right: 12px"
                               ><img
+                                class="sm-icon"
                                 width="24"
                                 src="https://i.ibb.co/wwvJkqb/twt-logo.png"
                                 alt="twitter"
                             /></a>
-                            <a href="#" style="padding-right: 12px"
+                            <a
+                              class="sm-link"
+                              href="#"
+                              style="padding-right: 12px"
                               ><img
+                                class="sm-icon"
                                 width="24"
                                 src="https://i.ibb.co/Br3r2wf/li-logo.png"
                                 alt="linkedin"
                             /></a>
-                            <a href="#" style="padding-right: 12px"
+                            <a
+                              class="sm-link"
+                              href="#"
+                              style="padding-right: 12px"
                               ><img
+                                class="sm-icon"
                                 width="24"
                                 src="https://i.ibb.co/3kzwmVH/em-logo.png"
                                 alt="email"
