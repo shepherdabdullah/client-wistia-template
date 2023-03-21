@@ -5,29 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wistia Newsletter</title>
-
-    <!--Media Queries-->
+    <!--Mobile Media Queries-->
     <style>
-      /*Tablet*/
       @media only screen and (max-width: 960px) {
+        * {
+          box-sizing: border-box;
+          margin: 0 auto;
+          padding: 0px;
+        }
+
         .email-container {
-          width: 600 !important;
-          padding: 0px 15px;
-        }
-
-        .content-container-bottom {
-        }
-
-        .content {
+          width: 600px !important;
+          padding: 0px 15px !important;
+          padding-top: 0px !important;
+          padding-bottom: 0px !important;
+          padding-left: 15px !important;
+          padding-right: 15px !important;
         }
 
         .blue-head-text {
+          padding-top: 0px !important;
+          padding-bottom: 0px !important;
+          padding-left: 15px !important;
+          padding-right: 15px !important;
         }
 
         .blk-head-text {
+          padding-top: 0px !important;
+          padding-left: 15px !important;
+          margin-top: 0px !important;
+          margin-bottom: 15px !important;
+        }
+
+        .img-subtext {
+          padding-left: 8px !important;
+          padding-top: 0px !important;
+          margin-top: 0px !important;
+          font-style: italic !important;
+        }
+
+        .italic-text {
+          font-style: italic !important;
+          padding-top: 5px !important;
+          padding-bottom: 5px !important;
+          padding-left: 15px !important;
+          padding-right: 15px !important;
         }
 
         .article-text {
+          padding-top: 5px !important;
+          padding-bottom: 5px !important;
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
+
+        .text-link {
+          color: #333333;
+          text-decoration: none;
+          border-bottom: 2px solid #2682ef !important;
         }
 
         .social-media {
@@ -35,48 +70,76 @@
         }
       }
 
-      /*Mobile*/
       @media only screen and (max-width: 600px) {
         .email-container {
           width: 100% !important;
         }
 
-        .content-container-bottom {
-        }
-
         .content {
+          margin-top: 10px !important;
+          margin-bottom: 10px !important;
         }
 
         .blue-head-text {
+          padding-top: 0px !important;
+          padding-bottom: 0px !important;
+          padding-left: 15px !important;
+          padding-right: 15px !important;
         }
 
         .blk-head-text {
+          padding-top: 0px !important;
+          padding-left: 15px !important;
+          margin-top: 0px !important;
+          margin-bottom: 15px !important;
+        }
+
+        .img-subtext {
+          padding-left: 8px !important;
+          padding-top: 0px !important;
+          margin-top: 0px !important;
+          font-style: italic !important;
+        }
+
+        .italic-text {
+          font-style: italic !important;
+          padding-top: 5px !important;
+          padding-bottom: 5px !important;
+          padding-left: 15px !important;
+          padding-right: 15px !important;
         }
 
         .article-text {
+          padding-top: 5px !important;
+          padding-bottom: 5px !important;
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
+
+        .text-link {
+          color: #333333 !important;
+          text-decoration: none;
+          border-bottom: 2px solid #2682ef !important;
         }
 
         .social-media {
           margin-bottom: 8px !important;
         }
 
+        .sm-link {
+          padding-right: 12px !important;
+        }
+
         .sm-icon {
-          width: 32px !important;
+          width: 24px !important;
         }
       }
     </style>
   </head>
 
-  <body style="margin-left: 0px; margin-right: 0px">
+  <body>
     <!--Email Container-->
-    <table
-      class="page"
-      width="100%"
-      border="0"
-      align="center"
-      cellspacing="0"
-      cellpadding="0"
-    >
+    <table width="100%" cellspacing="0" cellpadding="0">
       <tr>
         <td>
           <!--Email Content Container-->
@@ -92,7 +155,6 @@
               <td>
                 <!--Bordered Content 1-->
                 <table
-                  class="content-container-top"
                   cellspacing="0"
                   cellpadding="0"
                   align="center"
@@ -124,6 +186,10 @@
                                 font-weight: 800;
                                 font-family: Arial, Helvetica, sans-serif;
                                 padding: 0px 15px;
+                                padding-top: 0px;
+                                padding-bottom: 0px;
+                                padding-left: 15px;
+                                padding-right: 15px;
                                 margin-bottom: 0px;
                               "
                             >
@@ -156,6 +222,10 @@
                                 font-size: 16px;
                                 text-align: start;
                                 padding: 0px 15px;
+                                padding-top: 0px;
+                                padding-bottom: 0px;
+                                padding-left: 15px;
+                                padding-right: 15px;
                                 font-family: Arial, Helvetica, sans-serif;
                               "
                             >
@@ -178,6 +248,10 @@
                               class="article-text"
                               style="
                                 padding: 0px 15px;
+                                padding-top: 0px;
+                                padding-bottom: 0px;
+                                padding-left: 15px;
+                                padding-right: 15px;
                                 font-size: 16px;
                                 text-align: start;
                                 font-family: Arial, Helvetica, sans-serif;
@@ -194,6 +268,10 @@
                               class="article-text"
                               style="
                                 padding: 0px 15px;
+                                padding-top: 0px;
+                                padding-bottom: 0px;
+                                padding-left: 15px;
+                                padding-right: 15px;
                                 font-size: 16px;
                                 text-align: start;
                                 font-family: Arial, Helvetica, sans-serif;
@@ -212,6 +290,10 @@
                               class="article-text"
                               style="
                                 padding: 0px 15px;
+                                padding-top: 0px;
+                                padding-bottom: 0px;
+                                padding-left: 15px;
+                                padding-right: 15px;
                                 font-size: 16px;
                                 text-align: start;
                                 font-family: Arial, Helvetica, sans-serif;
@@ -243,13 +325,11 @@
 
                 <!--Bordered Content 2-->
                 <table
-                  class="content-container-bottom"
                   cellspacing="0"
                   cellpadding="0"
                   align="center"
                   width="600"
                   style="
-                    margin-top: 6px;
                     margin-top: 6px;
                     margin: 6px 0 0 0;
                     border-radius: 15px;
@@ -278,6 +358,10 @@
                                 font-size: 16px;
                                 font-weight: 800;
                                 padding: 0px 15px;
+                                padding-top: 0px;
+                                padding-bottom: 0px;
+                                padding-left: 15px;
+                                padding-right: 15px;
                                 margin-bottom: 0px;
                                 font-family: Arial, Helvetica, sans-serif;
                               "
@@ -306,7 +390,7 @@
                               alt="curb your enthusiasm"
                             />
                             <p
-                              class="article-text"
+                              class="article-text img-subtext"
                               style="
                                 padding-left: 8px;
                                 padding-top: 0px;
@@ -320,11 +404,15 @@
                               Curb Your Enthusiasm/HBO via Giphy
                             </p>
                             <p
-                              class="article-text"
+                              class="article-text italic-text"
                               style="
                                 font-size: 14px;
                                 font-style: italic;
                                 padding: 0px 15px;
+                                padding-top: 0px;
+                                padding-bottom: 0px;
+                                padding-left: 15px;
+                                padding-right: 15px;
                                 font-family: Arial, Helvetica, sans-serif;
                               "
                             >
@@ -355,6 +443,10 @@
                               class="article-text"
                               style="
                                 padding: 0px 15px;
+                                padding-top: 0px;
+                                padding-bottom: 0px;
+                                padding-left: 15px;
+                                padding-right: 15px;
                                 font-size: 16px;
                                 text-align: start;
                                 font-family: Arial, Helvetica, sans-serif;
@@ -371,6 +463,10 @@
                               class="article-text"
                               style="
                                 padding: 0px 15px;
+                                padding-top: 0px;
+                                padding-bottom: 0px;
+                                padding-left: 15px;
+                                padding-right: 15px;
                                 font-size: 16px;
                                 text-align: start;
                                 font-family: Arial, Helvetica, sans-serif;
@@ -386,6 +482,10 @@
                               class="article-text"
                               style="
                                 padding: 0px 15px;
+                                padding-top: 0px;
+                                padding-bottom: 0px;
+                                padding-left: 15px;
+                                padding-right: 15px;
                                 font-size: 16px;
                                 text-align: start;
                                 font-family: Arial, Helvetica, sans-serif;
@@ -409,6 +509,10 @@
                               style="
                                 font-style: italic;
                                 padding: 0px 15px;
+                                padding-top: 0px;
+                                padding-bottom: 0px;
+                                padding-left: 15px;
+                                padding-right: 15px;
                                 font-size: 16px;
                                 text-align: start;
                                 font-family: Arial, Helvetica, sans-serif;
